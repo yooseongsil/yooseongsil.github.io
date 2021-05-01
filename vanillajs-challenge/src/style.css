@@ -1,0 +1,15 @@
+body {
+  color: white;
+  background: black;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.clock {
+  font-size: 46px;
+}
