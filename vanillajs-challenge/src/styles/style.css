@@ -21,8 +21,24 @@ ul {
   justify-content: space-between;
 }
 
+.weather {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.weather img {
+  width: 60px;
+  height: 60px;
+}
+
+.weather span {
+  font-size: 32px;
+}
+
 .clock {
-  font-size: 46px;
+  font-size: 36px;
+  margin: 10px 20px;
 }
 
 .bg-image {

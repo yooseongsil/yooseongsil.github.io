@@ -1,6 +1,7 @@
 import { getLocalStorage, getRandomNumber, setLocalStorage, getTimeNow } from './constants.js';
 import { clock } from './clock.js';
 import { IMAGE_MAX_NUMBER, paintImage } from './bg.js';
+import { loadCoords } from './weather.js';
 
 const $body = document.querySelector("body");
 const $nameForm = document.querySelector("#name-form");
@@ -118,6 +119,8 @@ function handleDeleteTodo(todoItem) {
 function init() {
   clock();
   setInterval(clock, 1000);
+
+  loadCoords();
 
   const randomNumber = getRandomNumber(IMAGE_MAX_NUMBER);
   paintImage($body, randomNumber);
