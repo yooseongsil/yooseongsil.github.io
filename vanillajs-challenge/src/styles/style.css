@@ -99,10 +99,11 @@ ul {
   color: rgb(44 61 79);
   background: rgba(255 255 255 / 0.7);
   border-radius: 10px;
-  padding: 6px 30px 6px 50px;
+  padding: 6px 50px 6px 50px;
   margin-bottom: 16px;
   line-height: 125%;
-  vertical-align: middle;
+  vertical-align: top;
+  position: relative;
 }
 
 del {
@@ -119,15 +120,20 @@ del {
   width: 32px;
   height: 32px;
   border-radius: 10px;
-  position: relative;
+  position: absolute;
   background: white;
-  margin-top: -14px;
-  margin-left: -42px;
+  left: 0;
+  margin-left: 10px;
+  top: 0;
+  margin-top: -6px;
   border: 2px solid gainsboro !important;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .check-button:hover {
   background: gainsboro;
+  box-shadow: 0 8px 40px -5px rgb(0 0 0 / 9%);
 }
 
 .check-button.checked {
